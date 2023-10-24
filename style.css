@@ -84,7 +84,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: skyblue;
+    color: rgb(64, 101, 116);
     text-decoration: none;
 }
 
@@ -99,24 +99,28 @@ nav ul {
     list-style-type: none;
     margin: auto;
     padding: 0;
-    background-color: #dddddd;
+    background-color: #ff6464;
     overflow: hidden;
+    
 }
 
 nav ul li {
     float: left;
+   width: 25%;
+   height: 40px;
 }
 
 nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    height: 40px;
+
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    background-color: #fcff45;
 }
 
 nav li a.active {
