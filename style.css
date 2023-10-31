@@ -13,6 +13,11 @@
 
 /* Basisinstellingen voor alle pagina's, alleen aanpassen als je pro wilt worden */
 
+:root{
+  --BarHeight: 35px;
+}
+
+
 * {                                        /* geldt voor alles */
   box-sizing: border-box;                  /* zorg dat border meetelt bij de width en height van boxen */
   margin: 0px;                             /* standaard marge 0 */
@@ -20,8 +25,8 @@
 
 html, body {                      /* geldt voor html en body */
   margin: 0px;                    /* standaard marge 0 */
-  background-color: #EEEEEE;    /* achtergrondkleur lichtgrijs */
-  color: #303030;               /* tekstkleur donkergrijs */
+  background-color: #00887a;    /* achtergrondkleur lichtgrijs */
+  color: #000000;               /* tekstkleur donkergrijs */
 }  
 
 div {                             /* geldt voor div */
@@ -31,7 +36,7 @@ div {                             /* geldt voor div */
 /* Indeling voor alle pagina's */
 
 .page {
-  width: 700px;                   /* vaste breedte van 700 pixels */
+  width: 750px;                   /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
 }
 
@@ -48,7 +53,7 @@ h1, h2, h3 {                      /* geldt voor h1 en h2 en h3 */
 } 
 
 p {
-  margin: 10px 0px;
+  margin: 0;
   text-align: justify;            /* tekst links en rechts uitvullen */
 }
 
@@ -60,9 +65,18 @@ img {
 
 /* .item {} */ /* hier doen we nog niks mee, dat mag je zelf toevoegen */
 
+
+.rounded-box {
+  width: 750px;                             /* Adjust the width to your preference */
+  padding: 20px;                              /* Adjust the padding to your preference */
+  border: 2px solid #333;               /* Border color and width */
+  border-radius: 15px;                      /* Adjust the border radius for rounded edges */
+  background-color: rgba(240, 240, 240, 0.7);            
+}
+
 .item-plaatje {
   float:left;
-  width:250px;
+  width:175px;
   padding-right: 15px; /* zorgt dat plaatje niet tegen tekst komt */
 }
 .item-tekst {
@@ -99,7 +113,7 @@ nav ul {
     list-style-type: none;
     margin: auto;
     padding: 0;
-    background-color: #ff6464;
+    background-color: rgb(206, 218, 30);
     overflow: hidden;
     
 }
@@ -107,7 +121,7 @@ nav ul {
 nav ul li {
     float: left;
    width: 25%;
-   height: 40px;
+   height: var(--BarHeight);
 }
 
 nav li a {
@@ -115,14 +129,21 @@ nav li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    height: 40px;
+    height: var(--BarHeight);
 
 }
 
 nav li a:hover {
-    background-color: #fcff45;
+    background-color: #c6c901;
 }
 
 nav li a.active {
-    background-color: skyblue;
+    background-color: rgb(206, 218, 30);
+}
+
+#achtergrond{
+background-image: url(afbeeldingen/sintbg.png);
+background-repeat:repeat;
+
+
 }
