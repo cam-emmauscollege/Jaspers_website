@@ -67,10 +67,10 @@ img {
 
 
 .rounded-box {
-  width: 750px;                             /* Adjust the width to your preference */
-  padding: 20px;                              /* Adjust the padding to your preference */
-  border: 2px solid #333;               /* Border color and width */
-  border-radius: 15px;                      /* Adjust the border radius for rounded edges */
+  width: 750px;                             
+  padding: 20px;                            
+  border: 2px solid #333;              
+  border-radius: 15px;                     
   background-color: rgba(240, 240, 240, 0.7);            
 }
 
@@ -83,6 +83,9 @@ img {
   float:right;
   width: 450px;
 }
+
+
+
 
 /* Indeling voor sub pagina */
 
@@ -109,7 +112,23 @@ a:hover {
 /* Opmaak voor sub pagina's */
 
 /* Navigatiebalk voor alle pagina's */
-nav ul {
+
+.sidebar{
+  float:left;
+  width: 250px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  padding: 10px; /* Add padding for better spacing */
+  display: block; /* Display links as blocks */
+}
+
+.sidebar ul li {
+  display: block; /* Display list items as blocks */
+}
+
+.sidebar nav ul {
     list-style-type: none;
     margin: auto;
     padding: 0;
@@ -118,13 +137,13 @@ nav ul {
     
 }
 
-nav ul li {
+.sidebar nav ul li {
     float: left;
    width: 25%;
    height: var(--BarHeight);
 }
 
-nav li a {
+.sidebar nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -133,17 +152,16 @@ nav li a {
 
 }
 
-nav li a:hover {
+.sidebar nav li a:hover {
     background-color: #c6c901;
 }
 
-nav li a.active {
+.sidebar nav li a.active {
     background-color: rgb(206, 218, 30);
 }
 
 #achtergrond{
 background-image: url(afbeeldingen/sintbg.png);
 background-repeat:repeat;
-
-
 }
+
