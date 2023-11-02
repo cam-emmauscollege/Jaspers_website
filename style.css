@@ -77,11 +77,13 @@ img {
 .item-plaatje {
   float:left;
   width:175px;
-  padding-right: 15px; /* zorgt dat plaatje niet tegen tekst komt */
+  padding-right: 5px; /* zorgt dat plaatje niet tegen tekst komt */
+  
+  
 }
 .item-tekst {
-  float:right;
-  width: 450px;
+  font-size: 20px;
+  overflow:visible;
 }
 
 
@@ -122,6 +124,7 @@ a:hover {
   text-decoration: none;
   padding: 10px; /* Add padding for better spacing */
   display: block; /* Display links as blocks */
+  
 }
 
 .sidebar ul li {
@@ -130,22 +133,22 @@ a:hover {
 
 .sidebar nav ul {
     list-style-type: none;
-    margin: auto;
+    margin:0;
     padding: 0;
-    background-color: rgb(206, 218, 30);
+    background-color: rgb(235,198,96);
     overflow: hidden;
     
 }
 
 .sidebar nav ul li {
-    float: left;
-   width: 25%;
+    
+   
    height: var(--BarHeight);
 }
 
 .sidebar nav li a {
     display: block;
-    color: white;
+    color: rgb(250,251,252);
     text-align: center;
     text-decoration: none;
     height: var(--BarHeight);
@@ -153,11 +156,12 @@ a:hover {
 }
 
 .sidebar nav li a:hover {
-    background-color: #c6c901;
+    background-color: rgb(235,118,54);
+
 }
 
 .sidebar nav li a.active {
-    background-color: rgb(206, 218, 30);
+    background-color: rgb(216,54,30);
 }
 
 #achtergrond{
