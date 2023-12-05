@@ -35,6 +35,8 @@ div {                             /* geldt voor div */
 
 /* Indeling voor alle pagina's */
 
+
+
 .page {
   width: 750px;                   /* vaste breedte van 700 pixels */
   margin: 10px auto;              /* boven en onder 10 pixels marge, links en rechts marge gelijk verdeeld (gecentreerd) */
@@ -115,10 +117,7 @@ a:hover {
 
 /* Navigatiebalk voor alle pagina's */
 
-.sidebar{
-  float:left;
-  width: 250px;
-}
+
 
 .sidebar ul li a {
   text-decoration: none;
@@ -169,3 +168,6 @@ background-image: url(afbeeldingen/sintbg.png);
 background-repeat:repeat;
 }
 
+#link{
+  color:rgb(216,53,30);
+}
